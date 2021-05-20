@@ -52,8 +52,8 @@ if __name__ == '__main__':
     model_path = 'Kd6/p1_f10025_300_aug_db_re50_0.7888_037.h5'
     RFModel    = load_model(model_path, custom_objects={'signed_sqrt': signed_sqrt})
   
-    X1 = ['/data/Dataset/FG_RFIW/Images/F0001/MID4/P00006_face1.jpg', '/data/Dataset/FG_RFIW/Images/F0005/MID1/P00053_face1.jpg']
-    X2 = ['/data/Dataset/FG_RFIW/Images/F0001/MID2/P00002_face1.jpg', '/data/Dataset/FG_RFIW/Images/F0001/MID2/P00002_face1.jpg']
+    X1 = ['/data/zzg/FGRFIW/Images/F0001/MID4/P00006_face1.jpg', '/data/zzg/FGRFIW/Images/F0005/MID1/P00053_face1.jpg']
+    X2 = ['/data/zzg/FGRFIW/Images/F0001/MID2/P00002_face1.jpg', '/data/zzg/FGRFIW/Images/F0001/MID2/P00002_face1.jpg']
     X1_FN  = np.array([read_img_fn(x) for x in X1])
     X1_VGG = np.array([read_img_vgg(x) for x in X1])
 
